@@ -1,0 +1,19 @@
+{
+  "name": "@alejozepol/gravatar",
+  "version": "1.0.0",
+  "description": "Librería para utilizar Gravatar y traer un avatar según el correo electrónico ingresado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gravatar",
+    "avatar",
+    "javaScript"
+  ],
+  "author": "Alejandro Lopez Ramirez <alejozepol@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "md5": "^2.2.1"
+  }
+}
