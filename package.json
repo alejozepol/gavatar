@@ -11,6 +11,10 @@
     "avatar",
     "javaScript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejozepol/gavatar.git"
+  },
   "author": "Alejandro Lopez Ramirez <alejozepol@gmail.com>",
   "license": "ISC",
   "dependencies": {
