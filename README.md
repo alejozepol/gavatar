@@ -30,7 +30,7 @@ Para implementar la libreria dentro de tu proyecto puedes seguir el siguiente ej
 import gravatar from '@alejozepol/gravatar';
 
 //el objeto user corresponde a la informacion del usuario.
-// el **hasUser** es contante de true o false para validar si el objeto user posee o no datos si es verdadero utiliza la libreria de Gravitar si es falso trae un avatar de imagen statica dentro del proyecto.
+// el hasUser es contante de true o false para validar si el objeto user posee o no datos si es verdadero utiliza la libreria de Gravitar si es falso trae un avatar de imagen statica dentro del proyecto.
 
         <div className='header__menu--perfil'>
           <p>Perfil</p>
