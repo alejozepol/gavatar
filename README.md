@@ -1,8 +1,8 @@
 # Gravatar JavaScript
 
-_Mediante esta libreria puede utilizar el servicio de Gravatar https://es.gravatar.com/ el cual crea una Un "avatar"(una imagen que lo representa en línea, una pequeña imagen que aparece junto a su nombre cuando interactúa con sitios web). Lo carga y crea su perfil solo una vez, y luego cuando participa en cualquier sitio habilitado para Gravatar, su imagen de Gravatar lo seguirá automáticamente allí.
+_Mediante esta libreria puede utilizar el servicio de Gravatar https://es.gravatar.com/ el cual crea una Un "avatar"(una imagen que lo representa en línea, una pequeña imagen que aparece junto a su nombre cuando interactúa con sitios web). Lo carga y crea su perfil solo una vez, y luego cuando participa en cualquier sitio habilitado para Gravatar, su imagen de Gravatar lo seguirá automáticamente allí._
 
-Gravatar es un servicio gratuito para propietarios de sitios, desarrolladores y usuarios. Se incluye automáticamente en cada cuenta de WordPress.com._
+_Gravatar es un servicio gratuito para propietarios de sitios, desarrolladores y usuarios. Se incluye automáticamente en cada cuenta de WordPress.com._
 
 ## Comenzando 🚀
 
@@ -13,6 +13,43 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Instalación 🔧
 
+utiliza NPM para realizar la instalación con 
+
+```
+npm i @alejozepol/gravatar
+
+```
+
+### Implementación
+
+Es importante tener en cuenta que para que la libreria funcione es necesario enviar el email para que sea convertido en un hash y se interpretado por gravatar
+
+Para implementar la libreria dentro de tu proyecto puedes seguir el siguiente ejemplo:
+
+```JavaScript
+import gravatar from '@alejozepol/gravatar';
+
+//el objeto user corresponde a la informacion del usuario.
+// el hasUser es contante de true o false para validar si el objeto user posee o no datos si es verdadero utiliza la libreria de Gravitar si es falso trae un avatar de imagen statica dentro del proyecto.
+
+        <div className='header__menu--perfil'>
+          <p>Perfil</p>
+          {hasUser ? (
+            <img
+              className='menu__perfil--perfil'
+              src={gravatar(user.email)}
+              alt={user.email}
+            />
+          ) : (
+            <img
+              className='menu__perfil--perfil'
+              src={userIcon}
+              alt='Icono Perfil'
+            />
+          )}
+        </div>
+
+```
 
 ## Autores ✒️
 
